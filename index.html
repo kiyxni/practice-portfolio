@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Waqar's Portfolio</title>
+    <script src="https://kit.fontawesome.com/25f26f4cdc.js" crossorigin="anonymous"></script>
+    <script src="nav.js" defer></script>
+</head>
+
+<!--BODY WAS ORIGINALLY HERE, MOVED -->
+<header class="primary-header flex">
+    <!--THIS IS MY LOGO (That I created on Canva)-->
+    <!--THIS IS MY LOGO -->
+    <div>
+        <img src="/images/TSP Logo Nav.svg" alt="logo" class="logo" width="130px" height="130px">
+    </div> <!--SVG's can be edited size like above-->
+
+    <!--THIS BUTTON CONTROLS THE NAV BAR VIA ARIA JS-->
+    <button class="mobile-nav-toggle"
+    aria-controls="primary-nav" 
+    aria-expanded="false">
+    <span class="sr-only"><!--Menu--></span>
+    </button>
+    <!--sr=screen reader-->
+
+    <!--THIS IS MY NAVIGATION BAR w/ JS-->
+    <!--BECOMES A TRANSPARENT SIDE NAV BAR ON MOBILE-->
+    <nav>
+        <ul id="primary-nav" 
+        data-visible="false" class="primary-nav flex">
+            <li class="active">
+                <a href="index.html">
+                    <span>00:</span>HOME
+                </a>
+            <li>
+                <a href="profile.html">
+                    <span>01:</span>PROFILE
+                </a>
+            <li>
+                <a href="projects.html">
+                    <span>02:</span>PROJECTS
+                </a>
+            <li>
+                <a href="contact.html">
+                    <span>03:</span>CONTACT
+                </a>
+        </ul>
+    </nav>
+</header>
+
+<!-- //////// POTENTIAL WELCOME SIGN? /////////
+    <section>
+    <h1>Hello World. 
+    <br>Welcome to my Portfolio.</h1>
+</section>-->
+
+<!--THIS IS MY ABOUT ME SECTION (PROFILE)-->
+<!--THIS IS MY ABOUT ME SECTION (PROFILE)-->
+<body> <!--move this body back to OG position before nav, see what happens-->
+    
+    <section>
+        <div class="main-image">
+            <img src="images/LOGO FRONTPAGE V2.svg" height="600px" weight="600px">
+        </div>
+        <!--<div class="contact-button-landingpage">
+            <a href=""><button>Contact Me</button></a>
+        </div> USE CSS POSITIONING HERE TO GET THIS UNDER LOGO-->
+    </section>
+
+    <section>
+    <div class="profile-section">
+        <div class="inner-container">
+            <h1>Profile</h1>
+            <p class="text">
+                Hi, my name is Waqar Kiyani. I am a Front End Developer.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Tellus mauris a diam maecenas sed enim ut. 
+                Eu facilisis sed odio morbi quis commodo odio aenean sed. 
+                Ipsum dolor sit amet consectetur adipiscing elit pellentesque 
+                habitant morbi. Habitasse platea dictumst vestibulum rhoncus 
+                est pellentesque.Congue eu consequat ac felis donec et. 
+                Praesent tristique magna sit amet purus gravida quis blandit. 
+                Nulla pellentesque dignissim enim sit. At risus viverra 
+                adipiscing at. Amet volutpat consequat mauris nunc vitae.
+            </p>
+            <div class="skills">
+                <span>Technologies I am proficient in:</span>
+                <!--<span>HTML:5</span>
+                <span>CSS:3</span>
+                <span>JAVASCRIPT</span>
+                <span>React.JS</span>
+                <span>Git Version Control</span>
+                <span>Node.JS</span>-->
+            </div>
+            <br>
+            <div class="skills images"><!--HTML5, CSS3, JS etc. Change H&W via svg att's -->
+                <span><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="50" height="50"/></span>
+                <span> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="50"/></span>
+                <span><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="50"/></span>
+                <span><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="50" height="50"/></span>
+                <span><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="50" height="50"/></span>       
+                <span><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="50" height="50"/></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="headers">
+    <p class="header-text">My Projects</p>
+</section>
+
+<!--THIS IS MY PROJECTS SECTION (PROJECTS)-->
+<!--THIS IS MY PROJECTS SECTION (PROJECTS)-->
+<section class="projects-container">
+    <div class="projects-card">
+        <div class="card-image card-1"></div>
+        <h2>Title of Project 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore 
+        magna aliqua. Tellus mauris a diam maecenas sed enim ut.</p>
+        <a href="">Read More</a>
+    </div>
+
+    <div class="projects-card">
+        <div class="card-image card-2"></div>
+        <h2>Title of Project 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore 
+        magna aliqua. Tellus mauris a diam maecenas sed enim ut.</p>
+        <a href="">Read More</a>
+    </div>
+
+    <div class="projects-card">
+        <div class="card-image card-3"></div>
+        <h2>Title of Project 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore 
+        magna aliqua. Tellus mauris a diam maecenas sed enim ut.</p>
+        <a href="">Read More</a>
+    </div>
+
+    <div class="projects-card">
+        <div class="card-image card-4"></div>
+        <h2>Title of Project 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore 
+        magna aliqua. Tellus mauris a diam maecenas sed enim ut.</p>
+        <a href="">Read More</a>
+    </div>
+
+    <div class="projects-card">
+        <div class="card-image card-5"></div>
+        <h2>Title of Project 5</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore 
+        magna aliqua. Tellus mauris a diam maecenas sed enim ut.</p>
+        <a href="">Read More</a>
+    </div>
+
+    <div class="projects-card">
+        <div class="card-image card-6"></div>
+        <h2>Title of Project 6</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore 
+        magna aliqua. Tellus mauris a diam maecenas sed enim ut.</p>
+        <a href="">Read More</a>
+    </div>
+</section>
+
+<!--Didn't need this after all, but this should be the style for below
+    <section class="headers">
+    <p class="header-text">Contact Me</p>
+</section>-->
+
+<!--THIS IS MY CONTACT FORM SECTION (CONTACT)-->
+<!--THIS IS MY CONTACT FORM SECTION (CONTACT)-->
+
+<section class="contact-main">
+    <div class="contact-content">
+        <h2>Let's get in touch!</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Tellus mauris a diam maecenas sed enim ut. 
+            Eu facilisis sed odio morbi quis commodo odio aenean sed. 
+            Ipsum dolor sit amet consectetur adipiscing elit pellentesque 
+            habitant morbi. Habitasse platea dictumst vestibulum rhoncus 
+            est pellentesque.Congue eu consequat ac felis donec et. 
+            Praesent tristique magna sit amet purus gravida quis blandit. 
+            Nulla pellentesque dignissim enim sit. At risus viverra 
+            adipiscing at. Amet volutpat consequat mauris nunc vitae.</p>
+    </div>
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="contact-box">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-text">
+                    <h3>Email Address</h3>
+                    <p>waqar-kiyani@hotmail.com</p>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></i></div>
+                <div class="contact-text">
+                    <h3>Contact Number</h3>
+                    <p>+44 7599 648 283</p>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></i></div>
+                <div class="contact-text">
+                    <h3>Location</h3>
+                    <p>Birmingham, West Midlands, United Kingdom</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form>
+                <h2>Send Message</h2>
+                <div class="form-inputbox">
+                    <input type="text" name="" required="required">
+                    <span class="spanclass">Full Name</span>
+                </div>
+                <div class="form-inputbox">
+                    <input type="text" name="" required="required">
+                    <span class="spanclass">Email</span>
+                </div>
+                <div class="form-inputbox">
+                    <textarea required="required"></textarea>
+                    <span class="spanclass">Type Your Message...</span>
+                </div>
+                <div class="form-inputbox">
+                    <input type="submit" name="" value="send">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--THIS IS MY FOOTER-->
+<footer class="footer-whole">
+    <p class="footer-text">Waqar Kiyani @ 2022</p>
+</footer>
+
+</body>
+</html>
